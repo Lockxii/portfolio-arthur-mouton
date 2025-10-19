@@ -1,0 +1,465 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0A0A0A;
+    color : #FAFAFA;
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+nav ul li a span {
+    list-style: none;
+    text-decoration: none;
+    color : #FAFAFA;
+}
+
+ul {
+    list-style: none;
+}
+
+nav ul li  {
+    padding-bottom: 50px;
+    
+}
+
+nav ul li a {
+    border-bottom: 2px solid transparent; 
+    transition: border-color 0.3s;
+}
+
+nav ul li a:hover{
+    border-bottom: 2px solid #FAFAFA;
+}
+
+
+
+aside {
+  position: fixed;      
+  left: 20px;
+  width: 80px;           
+  height: 100vh;         
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1000;        
+}
+
+aside nav ul {
+    padding-left : 5px;
+}
+
+main {
+  width: 100%;          
+ 
+}
+
+
+.accueil {
+  position: relative;      
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  overflow: hidden;         
+}
+
+.accueil::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(1px 1px at 20px 30px, #fff 1px, transparent 2px),
+    radial-gradient(1px 1px at 120px 80px, #fff 1px, transparent 2px),
+    radial-gradient(1px 1px at 200px 150px, #fff 1px, transparent 2px);
+  background-size: 300px 300px;
+  animation: starsMove 10s linear infinite;
+  opacity: 0.2; /* très léger */
+}
+
+@keyframes starsMove {
+  from { background-position: 0 0; }
+  to   { background-position: -200px 100px; }
+}
+
+
+main .accueil .texteaccueil .helloaccueil {
+    text-align: left;
+    margin: 0%;
+    font-family: Nanum Gothic Coding;
+    font-size: 20px;
+}
+
+main .accueil .texteaccueil .Arthuraccueil {
+    text-align: center;
+    font-size: 90px;
+    margin: 0%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+main .accueil .texteaccueil .Dbutantcode {
+    text-align: right;
+    margin: 0%;
+    font-size: 20px;
+    font-family: Nanum Gothic Coding;
+}
+
+
+main .accueil .sourisaccueil {
+    position: absolute;
+    bottom: 20px; 
+    left:50%;
+    transform: translateX(-50%);
+    text-align: center; 
+}
+
+main .accueil .sourisaccueil .sourisimg {
+    width: 40px;  
+    height: auto;
+}
+
+main .accueil .sourisaccueil .sourisp {
+    font-size: 13px ;
+    font-family: Nanum Gothic Coding;
+    bottom: 30px; 
+
+}
+
+.apropos {
+  padding-left: 120px; 
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.texteapropos {
+  float: left;
+  width: 50%;       
+}
+
+.imgarthur{
+
+    float: right;
+    margin-left: 20px;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+    height: 60%;
+    width: 30%;
+    border: 2px solid #FAFAFA;
+}
+
+
+.competences {
+  padding-left: 120px; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+main .competences .bloc1, main .competences .bloc2, main .competences .bloc3, main .competences .bloc4 {
+    border: 2px solid #FAFAFA;
+    border-radius: 10px;
+    padding: 20px;
+    height: 360px;
+    width: calc(45% - 10px);
+    display: inline-block; 
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+
+main .competences .bloc1, main .competences .bloc3{
+    margin-right: 20px; 
+    margin-bottom: 20px;
+}
+
+main .competences .bloc4, main .competences .bloc2{
+    margin-right: 20px; 
+    margin-bottom: 20px;
+}
+
+.htmlicon {
+    height: auto;
+    width: 40px;
+}
+
+.cssicon {
+    height: auto;
+    width: 40px;
+}
+
+.pythonicon {
+    height: auto;
+    width: 40px;
+}
+
+.jsicon {
+    height: auto;
+    width: 40px;
+}
+
+.projets {
+  padding-left: 120px; 
+  padding-top: 80px;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.titreprojet {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.contact{
+  padding: 80px 0 40px;              
+  width: calc(100% - 120px);         
+  margin-left: 120px;   
+}
+
+.contact a {
+  color: #FAFAFA;             
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;        
+  fill: #FAFAFA;            
+}
+.contact a svg { width: 28px; height: 28px; }
+
+.contact h1 {
+  flex: 0 0 100%;
+  text-align: center;
+  margin: 0 0 12px 0;
+}
+
+.b1, .b2, .b3 { padding: 0; }
+
+.contactcont{
+  display: flex;
+  flex-wrap: wrap;                   
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  width: 100%;
+}
+
+/* Media Queries pour Responsive Design */
+
+/* Tablettes - Portrait */
+@media screen and (max-width: 1024px) {
+  .apropos {
+    padding-left: 60px;
+    padding-right: 20px;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .texteapropos {
+    width: 100%;
+    margin-bottom: 30px;
+    float: none;
+  }
+  
+  .imgarthur {
+    width: 60%;
+    height: auto;
+    float: none;
+    margin: 20px auto;
+    display: block;
+  }
+  
+  .competences {
+    padding-left: 60px;
+    padding-right: 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+  
+  .blocompetences {
+    width: 100%;
+  }
+  
+  main .competences .bloc1, main .competences .bloc2, 
+  main .competences .bloc3, main .competences .bloc4 {
+    width: calc(48% - 10px);
+    height: auto;
+    min-height: 320px;
+    margin: 0 1% 20px 0;
+  }
+  
+  main .competences .bloc2, main .competences .bloc4 {
+    margin-right: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  /* Navigation en bas pour mobile */
+  aside {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(10, 10, 10, 0.95);
+    backdrop-filter: blur(10px);
+    border-top: 1px solid #333;
+    z-index: 1000;
+  }
+  
+  aside nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+    margin: 0;
+    height: 100%;
+  }
+  
+  aside nav ul li {
+    padding-bottom: 0;
+  }
+  
+  /* Section accueil */
+  main .accueil .texteaccueil .Arthuraccueil {
+    font-size: 50px;
+  }
+  
+  main .accueil .texteaccueil .helloaccueil,
+  main .accueil .texteaccueil .Dbutantcode {
+    font-size: 16px;
+  }
+  
+  main .accueil .sourisaccueil {
+    bottom: 90px;
+  }
+  
+  /* Section à propos */
+  .apropos {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 90px;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    min-height: calc(100vh - 70px);
+  }
+  
+  .texteapropos {
+    width: 100%;
+    margin-bottom: 30px;
+    float: none;
+  }
+  
+  .imgarthur {
+    width: 80%;
+    height: auto;
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  /* Section compétences */
+  .competences {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 90px;
+    height: auto;
+    min-height: calc(100vh - 70px);
+  }
+  
+  .blocompetences {
+    width: 100%;
+  }
+  
+  .section1, .section2 {
+    width: 100%;
+  }
+  
+  main .competences .bloc1, main .competences .bloc2, 
+  main .competences .bloc3, main .competences .bloc4 {
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    margin: 0 0 20px 0;
+    display: block;
+  }
+  
+  /* Section contact */
+  .contact {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+    padding-bottom: 120px;
+  }
+  
+  .contactcont {
+    gap: 20px;
+  }
+  
+  .contact a svg { 
+    width: 32px; 
+    height: 32px; 
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  /* Section accueil - très petits écrans */
+  main .accueil .texteaccueil .Arthuraccueil {
+    font-size: 35px;
+  }
+  
+  main .accueil .texteaccueil .helloaccueil,
+  main .accueil .texteaccueil .Dbutantcode {
+    font-size: 14px;
+  }
+  
+  /* Ajustements généraux */
+  .apropos, .competences {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .imgarthur {
+    width: 90%;
+  }
+  
+  main .competences .bloc1, main .competences .bloc2, 
+  main .competences .bloc3, main .competences .bloc4 {
+    padding: 15px;
+    min-height: 220px;
+  }
+  
+  .htmlicon, .cssicon, .pythonicon, .jsicon {
+    width: 30px;
+    height: auto;
+  }
+  
+  .contact {
+    margin-left: 15px;
+    width: calc(100% - 30px);
+  }
+  
+  /* Titres plus petits */
+  .titrecomp, .apropostitre {
+    font-size: 28px;
+  }
+  
+  .titrehtml, .titrecss, .titrepython, .titrejs {
+    font-size: 22px;
+  }
+}
+
