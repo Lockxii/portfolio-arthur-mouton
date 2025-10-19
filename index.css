@@ -23,7 +23,6 @@ ul {
 
 nav ul li  {
     padding-bottom: 50px;
-    
 }
 
 nav ul li a {
@@ -38,14 +37,14 @@ nav ul li a:hover{
 
 
 aside {
-  position: fixed;      
+  position: fixed;
   left: 20px;
-  width: 80px;           
-  height: 100vh;         
+  width: 80px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 1000;        
+  z-index: 1000;
 }
 
 aside nav ul {
@@ -53,20 +52,19 @@ aside nav ul {
 }
 
 main {
-  width: 100%;          
- 
+  width: 100%;
 }
 
 
 .accueil {
-  position: relative;      
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 100vh;
-  overflow: hidden;         
+  overflow: hidden;
 }
 
 .accueil::before {
@@ -81,7 +79,7 @@ main {
     radial-gradient(1px 1px at 200px 150px, #fff 1px, transparent 2px);
   background-size: 300px 300px;
   animation: starsMove 10s linear infinite;
-  opacity: 0.2; /* très léger */
+  opacity: 0.2;
 }
 
 @keyframes starsMove {
@@ -127,10 +125,9 @@ main .accueil .sourisaccueil .sourisimg {
 }
 
 main .accueil .sourisaccueil .sourisp {
-    font-size: 13px ;
+    font-size: 13px;
     font-family: Nanum Gothic Coding;
-    bottom: 30px; 
-
+    bottom: 30px;
 }
 
 .apropos {
@@ -142,11 +139,10 @@ main .accueil .sourisaccueil .sourisp {
 
 .texteapropos {
   float: left;
-  width: 50%;       
+  width: 50%;
 }
 
 .imgarthur{
-
     float: right;
     margin-left: 20px;
     padding: 20px;
@@ -173,19 +169,19 @@ main .competences .bloc1, main .competences .bloc2, main .competences .bloc3, ma
     padding: 20px;
     height: 360px;
     width: calc(45% - 10px);
-    display: inline-block; 
+    display: inline-block;
     text-align: center;
     vertical-align: top;
     box-sizing: border-box;
 }
 
 main .competences .bloc1, main .competences .bloc3{
-    margin-right: 20px; 
+    margin-right: 20px;
     margin-bottom: 20px;
 }
 
 main .competences .bloc4, main .competences .bloc2{
-    margin-right: 20px; 
+    margin-right: 20px;
     margin-bottom: 20px;
 }
 
@@ -223,17 +219,17 @@ main .competences .bloc4, main .competences .bloc2{
 }
 
 .contact{
-  padding: 80px 0 40px;              
-  width: calc(100% - 120px);         
-  margin-left: 120px;   
+  padding: 80px 0 40px;
+  width: calc(100% - 120px);
+  margin-left: 120px;
 }
 
 .contact a {
-  color: #FAFAFA;             
+  color: #FAFAFA;
   display: inline-flex;
   align-items: center;
-  gap: 8px;        
-  fill: #FAFAFA;            
+  gap: 8px;
+  fill: #FAFAFA;
 }
 .contact a svg { width: 28px; height: 28px; }
 
@@ -247,7 +243,7 @@ main .competences .bloc4, main .competences .bloc2{
 
 .contactcont{
   display: flex;
-  flex-wrap: wrap;                   
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 28px;
@@ -331,13 +327,10 @@ main .competences .bloc4, main .competences .bloc2{
     padding-bottom: 0;
   }
   
-  
-  /* Masquer tous les tirets par défaut */
   .tirets {
     display: none;
   }
   
-  /* Ajouter 2 tirets seulement pour les compétences */
   .titrecomp .tirets::after {
     content: " --";
     display: inline;
