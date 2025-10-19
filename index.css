@@ -333,6 +333,15 @@ main .competences .bloc4, main .competences .bloc2{
     padding-bottom: 0;
   }
   
+  /* Titre compétences plus court sur mobile */
+  .tirets {
+    display: none;
+  }
+  
+  .titrecomp {
+    font-size: 24px;
+  }
+  
   /* Section accueil */
   main .accueil .texteaccueil .Arthuraccueil {
     font-size: 50px;
