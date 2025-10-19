@@ -254,9 +254,7 @@ main .competences .bloc4, main .competences .bloc2{
   width: 100%;
 }
 
-/* Media Queries pour Responsive Design */
 
-/* Tablettes - Portrait */
 @media screen and (max-width: 1024px) {
   .apropos {
     padding-left: 60px;
@@ -307,7 +305,7 @@ main .competences .bloc4, main .competences .bloc2{
 
 
 @media screen and (max-width: 768px) {
-  /* Navigation en bas pour mobile */
+  
   aside {
     position: fixed;
     bottom: 0;
@@ -333,16 +331,23 @@ main .competences .bloc4, main .competences .bloc2{
     padding-bottom: 0;
   }
   
-  /* Titre compétences plus court sur mobile */
+  
+  /* Masquer tous les tirets par défaut */
   .tirets {
     display: none;
+  }
+  
+  /* Ajouter 2 tirets seulement pour les compétences */
+  .titrecomp .tirets::after {
+    content: " --";
+    display: inline;
   }
   
   .titrecomp {
     font-size: 24px;
   }
   
-  /* Section accueil */
+
   main .accueil .texteaccueil .Arthuraccueil {
     font-size: 50px;
   }
@@ -356,7 +361,7 @@ main .competences .bloc4, main .competences .bloc2{
     bottom: 90px;
   }
   
-  /* Section à propos */
+  
   .apropos {
     padding-left: 20px;
     padding-right: 20px;
@@ -381,7 +386,7 @@ main .competences .bloc4, main .competences .bloc2{
     display: block;
   }
   
-  /* Section compétences */
+  
   .competences {
     padding-left: 20px;
     padding-right: 20px;
@@ -407,7 +412,7 @@ main .competences .bloc4, main .competences .bloc2{
     display: block;
   }
   
-  /* Section contact */
+  
   .contact {
     margin-left: 20px;
     width: calc(100% - 40px);
@@ -426,7 +431,7 @@ main .competences .bloc4, main .competences .bloc2{
 
 
 @media screen and (max-width: 480px) {
-  /* Section accueil - très petits écrans */
+  
   main .accueil .texteaccueil .Arthuraccueil {
     font-size: 35px;
   }
@@ -436,7 +441,7 @@ main .competences .bloc4, main .competences .bloc2{
     font-size: 14px;
   }
   
-  /* Ajustements généraux */
+ 
   .apropos, .competences {
     padding-left: 15px;
     padding-right: 15px;
@@ -462,7 +467,7 @@ main .competences .bloc4, main .competences .bloc2{
     width: calc(100% - 30px);
   }
   
-  /* Titres plus petits */
+  
   .titrecomp, .apropostitre {
     font-size: 28px;
   }
